@@ -50,6 +50,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E2052AEC278DA02B00BFCB11 /* Viewcontrolers */ = {
+			isa = PBXGroup;
+			children = (
+				E28D8B5A278D9CFE007A1DE0 /* ViewController.swift */,
+			);
+			path = Viewcontrolers;
+			sourceTree = "<group>";
+		};
+		E2052AED278DA04500BFCB11 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E28D8B5C278D9CFE007A1DE0 /* Main.storyboard */,
+				E28D8B61278D9CFF007A1DE0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E2052AEE278DA05800BFCB11 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				E28D8B5F278D9CFF007A1DE0 /* Assets.xcassets */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		E2052AEF278DA05F00BFCB11 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E28D8B56278D9CFE007A1DE0 /* AppDelegate.swift */,
+				E28D8B58278D9CFE007A1DE0 /* SceneDelegate.swift */,
+				E28D8B64278D9CFF007A1DE0 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		E28D8B4A278D9CFE007A1DE0 = {
 			isa = PBXGroup;
 			children = (
@@ -71,13 +106,10 @@
 		E28D8B55278D9CFE007A1DE0 /* Tets Framework */ = {
 			isa = PBXGroup;
 			children = (
-				E28D8B56278D9CFE007A1DE0 /* AppDelegate.swift */,
-				E28D8B58278D9CFE007A1DE0 /* SceneDelegate.swift */,
-				E28D8B5A278D9CFE007A1DE0 /* ViewController.swift */,
-				E28D8B5C278D9CFE007A1DE0 /* Main.storyboard */,
-				E28D8B5F278D9CFF007A1DE0 /* Assets.xcassets */,
-				E28D8B61278D9CFF007A1DE0 /* LaunchScreen.storyboard */,
-				E28D8B64278D9CFF007A1DE0 /* Info.plist */,
+				E2052AEF278DA05F00BFCB11 /* Support */,
+				E2052AEE278DA05800BFCB11 /* Files */,
+				E2052AED278DA04500BFCB11 /* Storyboards */,
+				E2052AEC278DA02B00BFCB11 /* Viewcontrolers */,
 			);
 			path = "Tets Framework";
 			sourceTree = "<group>";
@@ -88,7 +120,6 @@
 				69EB3367AB78E00EDAAB4F39 /* Pods-Tets Framework.debug.xcconfig */,
 				0B769B41A2D3FB478885A6DE /* Pods-Tets Framework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -361,7 +392,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QD5349NP78;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tets Framework/Info.plist";
+				INFOPLIST_FILE = "Tets Framework/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -390,7 +421,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QD5349NP78;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tets Framework/Info.plist";
+				INFOPLIST_FILE = "Tets Framework/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
