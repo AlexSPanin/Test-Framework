@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F9AECE7DB80F5B152FA0D69 /* Pods_Tets_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CA2F9A5D9DEC311E22B1A2 /* Pods_Tets_Framework.framework */; };
 		E28D8B57278D9CFE007A1DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D8B56278D9CFE007A1DE0 /* AppDelegate.swift */; };
 		E28D8B59278D9CFE007A1DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D8B58278D9CFE007A1DE0 /* SceneDelegate.swift */; };
 		E28D8B5B278D9CFE007A1DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D8B5A278D9CFE007A1DE0 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B769B41A2D3FB478885A6DE /* Pods-Tets Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tets Framework.release.xcconfig"; path = "Target Support Files/Pods-Tets Framework/Pods-Tets Framework.release.xcconfig"; sourceTree = "<group>"; };
+		42CA2F9A5D9DEC311E22B1A2 /* Pods_Tets_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tets_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69EB3367AB78E00EDAAB4F39 /* Pods-Tets Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tets Framework.debug.xcconfig"; path = "Target Support Files/Pods-Tets Framework/Pods-Tets Framework.debug.xcconfig"; sourceTree = "<group>"; };
 		E28D8B53278D9CFE007A1DE0 /* Tets Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tets Framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28D8B56278D9CFE007A1DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28D8B58278D9CFE007A1DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9AECE7DB80F5B152FA0D69 /* Pods_Tets_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		483D6BED8DF7AB29B54682CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42CA2F9A5D9DEC311E22B1A2 /* Pods_Tets_Framework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E28D8B4A278D9CFE007A1DE0 = {
 			isa = PBXGroup;
 			children = (
 				E28D8B55278D9CFE007A1DE0 /* Tets Framework */,
 				E28D8B54278D9CFE007A1DE0 /* Products */,
+				F8F56443A1E5D826A03A9D31 /* Pods */,
+				483D6BED8DF7AB29B54682CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Tets Framework";
 			sourceTree = "<group>";
 		};
+		F8F56443A1E5D826A03A9D31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69EB3367AB78E00EDAAB4F39 /* Pods-Tets Framework.debug.xcconfig */,
+				0B769B41A2D3FB478885A6DE /* Pods-Tets Framework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E28D8B67278D9CFF007A1DE0 /* Build configuration list for PBXNativeTarget "Tets Framework" */;
 			buildPhases = (
+				AB5D4798084D3176E8FA3D49 /* [CP] Check Pods Manifest.lock */,
 				E28D8B4F278D9CFE007A1DE0 /* Sources */,
 				E28D8B50278D9CFE007A1DE0 /* Frameworks */,
 				E28D8B51278D9CFE007A1DE0 /* Resources */,
+				50C2B793840380C921F1CF9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50C2B793840380C921F1CF9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tets Framework/Pods-Tets Framework-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tets Framework/Pods-Tets Framework-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tets Framework/Pods-Tets Framework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5D4798084D3176E8FA3D49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tets Framework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E28D8B4F278D9CFE007A1DE0 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		E28D8B68278D9CFF007A1DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EB3367AB78E00EDAAB4F39 /* Pods-Tets Framework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		E28D8B69278D9CFF007A1DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B769B41A2D3FB478885A6DE /* Pods-Tets Framework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
