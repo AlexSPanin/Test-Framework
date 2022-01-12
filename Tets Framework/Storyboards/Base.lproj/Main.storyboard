@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tets_Framework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Tets_Framework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,11 +150,11 @@
                     <connections>
                         <outlet property="labelSpringButton" destination="wSV-1H-iDU" id="bRx-BY-K1a"/>
                         <outlet property="viewAnimationSpringView" destination="Bhi-tZ-2t0" id="ft2-fM-qcz"/>
-                        <outletCollection property="pressetLabel" destination="Te4-zf-9P9" collectionClass="NSMutableArray" id="OcN-u5-D50"/>
-                        <outletCollection property="pressetLabel" destination="lrT-5r-XmQ" collectionClass="NSMutableArray" id="Zz9-2i-Han"/>
-                        <outletCollection property="pressetLabel" destination="QRK-mF-SlU" collectionClass="NSMutableArray" id="X3F-44-SSd"/>
-                        <outletCollection property="pressetLabel" destination="eKU-Ez-dy8" collectionClass="NSMutableArray" id="gG7-n3-7Ou"/>
-                        <outletCollection property="pressetLabel" destination="4yo-Yn-87t" collectionClass="NSMutableArray" id="LKv-nt-0kd"/>
+                        <outletCollection property="presetLabel" destination="Te4-zf-9P9" collectionClass="NSMutableArray" id="OcN-u5-D50"/>
+                        <outletCollection property="presetLabel" destination="lrT-5r-XmQ" collectionClass="NSMutableArray" id="Zz9-2i-Han"/>
+                        <outletCollection property="presetLabel" destination="QRK-mF-SlU" collectionClass="NSMutableArray" id="X3F-44-SSd"/>
+                        <outletCollection property="presetLabel" destination="eKU-Ez-dy8" collectionClass="NSMutableArray" id="gG7-n3-7Ou"/>
+                        <outletCollection property="presetLabel" destination="4yo-Yn-87t" collectionClass="NSMutableArray" id="LKv-nt-0kd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
