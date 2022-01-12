@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     
     
-    private var pressed = ""
+    private var preset = ""
     private var curve = ""
     private var force: CGFloat = 0
     private var delay: CGFloat = 0
@@ -24,43 +24,67 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewPresset()
+        
+        preset = getNamesPreset()
+        curve = getNameCurve()
+        setRandomPresetSpring()
+        
         
     }
     
 
     @IBAction func runAnimationSpringButton(_ sender: SpringButton) {
         
-        setRandomPressetSpring()
+        viewPreset()
         
-//        for count in Spring.AnimationPreset.allCases {
-
-        labelAnimationSpringView.animation = Spring.AnimationPreset.fadeInLeft.rawValue
-        labelSpringButton.setTitle("RUN \(pressed)", for: .normal)
-
-            labelAnimationSpringView.curve = Spring.AnimationCurve.easeOut.rawValue
+        labelAnimationSpringView.animation = preset
+        labelAnimationSpringView.curve = curve
+        
         labelAnimationSpringView.force = force
         labelAnimationSpringView.delay = delay
         labelAnimationSpringView.duration = duration
-            labelAnimationSpringView.animate()
-            
- //       }
+        
+        
+        labelAnimationSpringView.animate()
+        
+       
+        
+        
+        preset = getNamesPreset()
+        curve = getNameCurve()
+        setRandomPresetSpring()
+        
+        labelSpringButton.setTitle("RUN \(preset)", for: .normal)
+        
+        
+
+        
+        
+       
     }
 }
 
 extension ViewController {
     
-    private func setRandomPressetSpring() {
-        force = CGFloat.random(in: 0...2)
-        delay = CGFloat.random(in: 0...1)
-        duration = CGFloat.random(in: 0...3)
-        
-        
+    private func getNamesPreset() -> String {
+        let index = Int.random(in: 0..<Spring.AnimationPreset.allCases.count)
+        return Spring.AnimationPreset.allCases[index].rawValue
     }
     
-    private func viewPresset() {
-        pressetLabel[0].text = labelAnimationSpringView.animation
-        pressetLabel[1].text = labelAnimationSpringView.curve
+    private func getNameCurve() -> String {
+        let index = Int.random(in: 0..<Spring.AnimationCurve.allCases.count)
+        return Spring.AnimationCurve.allCases[index].rawValue
+    }
+    
+    private func setRandomPresetSpring() {
+        force = CGFloat.random(in: 0...2)
+        delay = CGFloat.random(in: 0...1)
+        duration = CGFloat.random(in: 1...3)
+    }
+    
+    private func viewPreset() {
+        pressetLabel[0].text = preset
+        pressetLabel[1].text = curve
         pressetLabel[2].text = String(Float(force))
         pressetLabel[3].text = String(Float(delay))
         pressetLabel[4].text = String(Float(duration))
