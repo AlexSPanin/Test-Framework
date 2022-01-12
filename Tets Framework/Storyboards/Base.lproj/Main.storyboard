@@ -121,6 +121,18 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -136,8 +148,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="labelAnimationSpringView" destination="Bhi-tZ-2t0" id="ft2-fM-qcz"/>
                         <outlet property="labelSpringButton" destination="wSV-1H-iDU" id="bRx-BY-K1a"/>
+                        <outlet property="viewAnimationSpringView" destination="Bhi-tZ-2t0" id="ft2-fM-qcz"/>
                         <outletCollection property="pressetLabel" destination="Te4-zf-9P9" collectionClass="NSMutableArray" id="OcN-u5-D50"/>
                         <outletCollection property="pressetLabel" destination="lrT-5r-XmQ" collectionClass="NSMutableArray" id="Zz9-2i-Han"/>
                         <outletCollection property="pressetLabel" destination="QRK-mF-SlU" collectionClass="NSMutableArray" id="X3F-44-SSd"/>
